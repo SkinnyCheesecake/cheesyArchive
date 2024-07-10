@@ -1,0 +1,40 @@
+{
+  "name": "iloveyouhanna",
+  "version": "1.0.0",
+  "description": "This is a page dedicated on how much I love my girlfriend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "sass": "sass --watch source/scss:build/css",
+    "render": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkinnyCheeseCake/cheesyArchive.git"
+  },
+  "keywords": [
+    "Hanna",
+    "SASS",
+    "GULP",
+    "NPM",
+    "JS"
+  ],
+  "author": "Carlos & Hanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkinnyCheeseCake/cheesyArchive/issues"
+  },
+  "homepage": "https://github.com/SkinnyCheeseCake/cheesyArchive#readme",
+  "dependencies": {
+    "node": "^18.20.4"
+  },
+  "devDependencies": {
+    "glob": "^11.0.0",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.77.7",
+    "sharp": "^0.33.4"
+  }
+}

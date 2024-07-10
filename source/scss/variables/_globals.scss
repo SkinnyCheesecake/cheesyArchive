@@ -1,0 +1,47 @@
+@use 'vars' as *;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-padding-top: 0rem;
+}
+*, 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: $main-font;
+
+}
+
+h1, h2, h3, h4, a, p{
+    margin: 0;
+    padding: 0;
+}
+
+a, p{
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 4.6rem;
+}
+h3 {
+    font-size: 6rem;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
