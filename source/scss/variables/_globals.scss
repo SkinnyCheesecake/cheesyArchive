@@ -11,14 +11,10 @@ html {
     box-sizing: inherit;
 }
 
+
 body{
     font-family: $main-font;
 
-}
-
-h1, h2, h3, h4, a, p{
-    margin: 0;
-    padding: 0;
 }
 
 a, p{
@@ -27,10 +23,11 @@ a, p{
 
 a{
     color: black;
+    font-size: 1.5rem;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 1rem;
 }
 h2 {
     font-size: 4.6rem;
@@ -39,9 +36,19 @@ h3 {
     font-size: 6rem;
     text-align: center;
 }
+
 img {
     max-width: 100%;
     width: 100%;
     height: auto;
     display: block;
+}
+
+section{
+    min-width: 100vw;
+    max-height: 100vh;
+}
+
+body > section {
+    padding: 10rem 0;
 }
