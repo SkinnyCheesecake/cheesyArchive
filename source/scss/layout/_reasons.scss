@@ -2,38 +2,45 @@
 @use 'variables/vars' as *;
 @forward 'variables/globals';
 
-    .firstSection{
+.firstSection{
         min-height: 42rem;
         max-width: $mw;
         background-color: #fff;
         padding: 10rem;
-    }
+        }
 
 
 .fsContent{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     place-items: center;
-    place-content: center;
-    position: relative;
-    .picture{  
-            // position: absolute;
+    gap: 2rem;
+    .picture{
+        width: 100%;
+        img{
+            height: 35rem;
             width: 100%;
-            height: 100%;
-            inset: 0;
-            background-color: green;
-    }
-
-    .fsInfo{
-        text-align: end;
-
-        h1{
-            font-size: 6rem;
-            margin: 0;
-        }
-
-        p{
-            font-size: 1.4rem;
+            object-fit: cover;
         }
     }
+    
+
+}
+
+
+.fsInfo{
+
+    h1{
+        font-size: 6rem;
+        margin: 0;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+
+.moreContent{
+    font-size: 1.2rem;
 }

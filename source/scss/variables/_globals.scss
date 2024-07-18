@@ -37,18 +37,11 @@ h3 {
     text-align: center;
 }
 
-img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 section{
     min-width: 100vw;
-    max-height: 100vh;
+    min-height: 100vh;
 }
 
 body > section {
-    padding: 10rem 0;
+    padding: 4rem 4rem;
 }
