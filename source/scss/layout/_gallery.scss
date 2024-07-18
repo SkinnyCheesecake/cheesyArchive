@@ -1,0 +1,11 @@
+@use 'variables/mixins' as *;
+@use 'variables/vars' as *;
+@forward 'variables/globals';
+
+.gallery{
+    padding: 0.4rem 6rem;
+    h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+}

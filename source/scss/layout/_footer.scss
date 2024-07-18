@@ -1,0 +1,12 @@
+@use 'variables/mixins' as *;
+@use 'variables/vars' as *;
+@forward 'variables/globals';
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: white;
+    height: 50px;
+}
