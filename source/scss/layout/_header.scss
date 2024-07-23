@@ -6,6 +6,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    flex-direction: column;
+
+    @include tablet{
+        flex-direction: row;
+    }
 
     .logo{
         font-size: 2.6rem;
@@ -16,10 +21,18 @@
 
     .links{
         margin: 2rem 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @include tablet{
+            flex-direction: row;
+        }
+
         .link{
             margin: 1rem;
             color: black;
             transition: all 0.2s ease;
+            text-align: center;
             &:hover{
                 color: green;
             }
@@ -30,6 +43,8 @@
             background-color: green;
             padding: 1rem 2rem;
             border-radius: 10px;
+            border: 2px solid black;
+            font-weight: 700;
             &:hover{
                 color: rgb(251, 255, 251);
                 background-color: #25c2b0;

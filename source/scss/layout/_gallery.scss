@@ -28,8 +28,9 @@
 
         img{
             max-width: 40rem;
-            height: 35rem;
+            height: 30rem;
             object-fit: cover;
+            border: 2px solid black;
             box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         }
     }
