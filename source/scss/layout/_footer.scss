@@ -1,6 +1,5 @@
 @use 'variables/mixins' as *;
 @use 'variables/vars' as *;
-@forward 'variables/globals';
 
 .footer{
     display: flex;

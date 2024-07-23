@@ -6,6 +6,7 @@ import { glob } from 'glob'
 
 const sass = gulpSass(dartSass)
 
+//Funcion para crear la carpeta que renderiza los archivos .scss
 export function css ( done ) {
     src( 'source/scss/app.scss', {sourcemaps: true} )
     .pipe( sass().on('error', sass.logError))
@@ -14,6 +15,7 @@ export function css ( done ) {
     done()
 }
 
+//Funcion para crear la carpeta que renderiza el app.js
 export function js ( done ) {
     src( 'source/js/app.js' ).pipe( dest( 'build/js' ) )
     done()

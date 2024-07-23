@@ -1,0 +1,102 @@
+@use 'variables/mixins' as *;
+@use 'variables/vars' as *;
+
+.secondSection{
+    background-color: rgb(116, 161, 116);
+
+    h1{
+        color: white;
+    }
+    p{
+        text-align: center;
+        color: white;
+    }
+}
+
+.hero{
+    height: 70rem;
+    display: grid;
+    place-content: center;
+    .title{
+        margin: 2rem;
+    }
+    .inner-headings{
+        background-color: rgb(116, 161, 116);
+        height: 60px;
+        text-align: center;
+        line-height: 50px;
+        overflow: hidden;
+        span{
+            position: relative;
+            font-weight: 700;
+            font-size: 4.2rem;
+            color: rgb(255, 255, 137);
+            animation: animation 20s ease infinite;
+        }
+    }
+
+}
+
+@keyframes animation {
+    0%, 100%{
+        top: 0;
+    }
+    5%{
+        top: 0;
+    }
+    10%{
+        top: -61px;
+    }
+    15%{
+        top: -61px;
+    }
+    20%{
+        top: calc(-61px * 2);
+    }
+    25%{
+        top: calc(-61px * 2);
+    }
+    30%{
+        top: calc(-61px * 3);
+    }
+    35%{
+        top: calc(-61px * 3);
+    }
+    40%{
+        top: calc(-61px * 4);
+    }
+    45%{
+        top: calc(-61px * 4);
+    }
+    50%{
+        top: calc(-61px * 5);
+    }
+    55%{
+        top: calc(-61px * 5);
+    }
+    60%{
+        top: calc(-61px * 6);
+    }
+    65%{
+        top: calc(-61px * 6);
+    }
+    70%{
+        top: calc(-61px * 7);
+    }
+    75%{
+        top: calc(-61px * 7);
+    }
+    80%{
+        top: calc(-61px * 8);
+    }
+    85%{
+        top: calc(-61px * 8);
+    }
+    90%{
+        top: calc(-61px * 9);
+    }
+    95%{
+        top: calc(-61px * 9);
+    }
+
+}

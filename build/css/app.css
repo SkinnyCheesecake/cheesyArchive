@@ -14,6 +14,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 a, p {
   text-decoration: none;
 }
@@ -39,6 +45,19 @@ h3 {
 section {
   min-width: 100vw;
   min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.title {
+  font-size: 6rem;
+  text-align: center;
+  margin: 0;
 }
 
 body > section {
@@ -418,7 +437,7 @@ template {
 .firstSection {
   min-height: 42rem;
   max-width: 100vw;
-  background-color: #fff;
+  background-color: rgb(116, 161, 116);
   padding: 10rem;
 }
 
@@ -435,14 +454,17 @@ template {
   height: 35rem;
   width: 100%;
   object-fit: cover;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .fsInfo h1 {
   font-size: 6rem;
   margin: 0;
+  color: rgb(255, 255, 137);
 }
 .fsInfo p {
   font-size: 1.5rem;
+  color: white;
 }
 
 .moreContent {
@@ -450,11 +472,182 @@ template {
 }
 
 .gallery {
-  padding: 0.4rem 6rem;
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 .gallery h1 {
-  font-size: 4rem;
+  font-size: 8rem;
+  margin: 0 0 4rem 0;
   text-align: center;
+}
+.gallery .galeria-imagenes {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 480px) {
+  .gallery .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .gallery .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+.gallery .galeria-imagenes img {
+  max-width: 40rem;
+  height: 35rem;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.secondSection {
+  background-color: rgb(116, 161, 116);
+}
+.secondSection h1 {
+  color: white;
+}
+.secondSection p {
+  text-align: center;
+  color: white;
+}
+
+.hero {
+  height: 70rem;
+  display: grid;
+  place-content: center;
+}
+.hero .title {
+  margin: 2rem;
+}
+.hero .inner-headings {
+  background-color: rgb(116, 161, 116);
+  height: 60px;
+  text-align: center;
+  line-height: 50px;
+  overflow: hidden;
+}
+.hero .inner-headings span {
+  position: relative;
+  font-weight: 700;
+  font-size: 4.2rem;
+  color: rgb(255, 255, 137);
+  animation: animation 20s ease infinite;
+}
+
+@keyframes animation {
+  0%, 100% {
+    top: 0;
+  }
+  5% {
+    top: 0;
+  }
+  10% {
+    top: -61px;
+  }
+  15% {
+    top: -61px;
+  }
+  20% {
+    top: -122px;
+  }
+  25% {
+    top: -122px;
+  }
+  30% {
+    top: -183px;
+  }
+  35% {
+    top: -183px;
+  }
+  40% {
+    top: -244px;
+  }
+  45% {
+    top: -244px;
+  }
+  50% {
+    top: -305px;
+  }
+  55% {
+    top: -305px;
+  }
+  60% {
+    top: -366px;
+  }
+  65% {
+    top: -366px;
+  }
+  70% {
+    top: -427px;
+  }
+  75% {
+    top: -427px;
+  }
+  80% {
+    top: -488px;
+  }
+  85% {
+    top: -488px;
+  }
+  90% {
+    top: -549px;
+  }
+  95% {
+    top: -549px;
+  }
+}
+.lastSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-hero {
+  position: relative;
+  max-width: 800px;
+  min-height: 400px;
+  padding: 2rem;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  display: grid;
+  place-content: center;
+}
+.btn-hero .btn-group {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.btn-hero button {
+  font-size: 2.2rem;
+  border: none;
+  width: 100px;
+  height: 60px;
+  background-color: rgb(116, 161, 116);
+  color: white;
+  border-radius: 10px;
+}
+
+.question {
+  font-size: 5.6rem;
+  margin: 0 0 2rem 0;
 }
 
 .footer {

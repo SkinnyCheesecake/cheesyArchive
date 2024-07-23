@@ -1,11 +1,36 @@
 @use 'variables/mixins' as *;
 @use 'variables/vars' as *;
-@forward 'variables/globals';
 
 .gallery{
-    padding: 0.4rem 6rem;
+    @include contenedor;
+
     h1{
-        font-size: 4rem;
+        font-size: 8rem;
+        margin: 0 0 4rem 0;
         text-align: center;
+    }
+
+    .galeria-imagenes{
+        @include grid(1, 2rem);
+
+        @include telefono{
+            @include grid(2, 2rem);
+        }
+
+        @include tablet{
+            @include grid(3, 2rem);
+        }
+
+        @include desktop{
+            @include grid(4, 2rem);
+        }
+
+
+        img{
+            max-width: 40rem;
+            height: 35rem;
+            object-fit: cover;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
     }
 }
