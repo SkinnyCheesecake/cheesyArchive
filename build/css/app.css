@@ -13,6 +13,9 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+body.overflow {
+  overflow: hidden;
+}
 
 .contenedor {
   width: 95%;
@@ -377,7 +380,6 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
   flex-direction: column;
 }
 @media (min-width: 768px) {
@@ -408,20 +410,38 @@ template {
   transition: all 0.2s ease;
   text-align: center;
 }
-.header .links .link:hover {
+.header .links .link:hover, .header .links .link.actual {
   color: green;
 }
-.header .links .kissme {
-  color: #fff;
-  background-color: green;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  border: 2px solid black;
-  font-weight: 700;
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+  .header.fixed {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    animation: easeIn 0.5s ease;
+    z-index: 1;
+  }
 }
-.header .links .kissme:hover {
-  color: rgb(251, 255, 251);
-  background-color: #25c2b0;
+@keyframes easeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes easeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .header-section {
@@ -536,6 +556,53 @@ template {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  display: grid;
+  place-items: center;
+  animation: fade-in 0.5s ease;
+}
+.modal.fade-out {
+  animation: fade-out 0.5s ease;
+}
+.modal img {
+  max-width: 90rem;
+  max-height: 80rem;
+}
+
+.cerrarModal {
+  outline: none;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 1rem 1.2rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .secondSection {
   background-color: rgb(116, 161, 116);
 }
@@ -640,17 +707,16 @@ template {
 }
 
 .btn-hero {
-  position: relative;
-  max-width: 800px;
-  min-height: 400px;
-  padding: 2rem;
-  background-color: black;
-  color: white;
+  color: black;
   border-radius: 20px;
   display: grid;
+  position: relative;
+  height: 80rem;
+  width: 80vw;
   place-content: center;
 }
 .btn-hero .btn-group {
+  margin-top: 2rem;
   width: 100%;
   height: 40px;
   display: flex;
@@ -658,6 +724,7 @@ template {
   gap: 2rem;
 }
 .btn-hero button {
+  position: absolute;
   font-size: 2.2rem;
   border: none;
   width: 100px;
@@ -665,6 +732,14 @@ template {
   background-color: rgb(116, 161, 116);
   color: white;
   border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn-hero button:nth-child(1) {
+  margin-left: -200px;
+}
+.btn-hero button:nth-child(2) {
+  margin-left: 200px;
 }
 
 .question {

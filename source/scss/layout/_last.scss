@@ -9,16 +9,15 @@
 }
 
 .btn-hero{
-    position: relative;
-    max-width: 800px;
-    min-height: 400px;
-    padding: 2rem;
-    background-color: black;
-    color: white;
+    color: black;
     border-radius: 20px;
     display: grid;
+    position: relative;
+    height: 80rem;
+    width: 80vw;
     place-content: center;
     .btn-group{
+        margin-top: 2rem;
         width: 100%;
         height: 40px;
         display: flex;
@@ -28,6 +27,7 @@
     }
 
     button{
+        position: absolute;
         font-size: 2.2rem;
         border: none;
         width: 100px;
@@ -35,7 +35,16 @@
         background-color: rgb(116, 161, 116);
         color: white;
         border-radius: 10px;
-        
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    button:nth-child(1){
+        margin-left: -200px;
+    }
+
+    button:nth-child(2){
+        margin-left: 200px;
     }
     
 }
