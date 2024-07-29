@@ -92,7 +92,7 @@ function unclick() {
     
 
     yesBtn.addEventListener('click', () => {
-        question.innerHTML = "I want to kiss you too!";
+        question.innerHTML = "Yo tambien quiero besarte!";
     });
 
     noBtn.addEventListener('mouseover', () => {

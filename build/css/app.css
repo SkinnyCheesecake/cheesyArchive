@@ -457,7 +457,7 @@ template {
   color: #fff;
   position: absolute;
   z-index: 1;
-  width: 50rem;
+  width: 600rem;
   text-align: center;
 }
 .header-section .overlay h1 {
@@ -492,8 +492,8 @@ template {
 .fsContent .picture img {
   border: 2px solid black;
   border-radius: 10px;
-  height: 35rem;
   width: 100%;
+  height: 35rem;
   object-fit: cover;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
