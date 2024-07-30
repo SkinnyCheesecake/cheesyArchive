@@ -140,7 +140,7 @@ function cerrarModal (){
         modal?.remove()
 
         const body = document.querySelector('body')
-        body.classList.remove('ovewflow')
+        body.classList.remove('overflow')
     }, 500)
 }
 
