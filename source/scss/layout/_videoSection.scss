@@ -21,19 +21,13 @@
         background: linear-gradient(270deg, rgba(black, 69%), rgba(darken(black, 20%), 90%));
         inset: 0;
         h1{
-            font-size: 15rem;
+            font-size: 8rem;
             line-height: 0.82;
-        }
-
-        p{
-            margin-top: 20rem;
-            font-size: 5rem;
-        }
-
-        h1, p{
-            margin: 0;
-            padding: 0;
             letter-spacing: -2px;
+
+            @include tablet{
+                font-size: 15rem;
+            }
         }
     }
 

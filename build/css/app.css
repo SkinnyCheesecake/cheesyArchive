@@ -465,17 +465,14 @@ template {
   inset: 0;
 }
 .header-section .overlay h1 {
-  font-size: 15rem;
+  font-size: 8rem;
   line-height: 0.82;
-}
-.header-section .overlay p {
-  margin-top: 20rem;
-  font-size: 5rem;
-}
-.header-section .overlay h1, .header-section .overlay p {
-  margin: 0;
-  padding: 0;
   letter-spacing: -2px;
+}
+@media (min-width: 768px) {
+  .header-section .overlay h1 {
+    font-size: 15rem;
+  }
 }
 .header-section video {
   display: block;
@@ -516,9 +513,15 @@ template {
 }
 
 .fsInfo h1 {
-  font-size: 6rem;
-  margin: 0;
+  font-size: 2.2rem;
+  margin-block: 2rem;
   color: rgb(255, 255, 137);
+}
+@media (min-width: 1200px) {
+  .fsInfo h1 {
+    font-size: 6rem;
+    margin-block: 0;
+  }
 }
 .fsInfo p {
   font-size: 1.5rem;
@@ -585,8 +588,16 @@ template {
   animation: fade-out 0.5s ease;
 }
 .modal img {
-  max-width: 90rem;
-  max-height: 80rem;
+  max-width: 80vw;
+  min-height: 40rem;
+  object-fit: cover;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .modal img {
+    max-width: 90rem;
+    max-height: 80rem;
+  }
 }
 
 .cerrarModal {
@@ -729,8 +740,13 @@ template {
   display: grid;
   position: relative;
   height: 80rem;
-  width: 80vw;
+  width: 390px;
   place-content: center;
+}
+@media (min-width: 1200px) {
+  .btn-hero {
+    width: 80vw;
+  }
 }
 .btn-hero .btn-group {
   margin-top: 2rem;

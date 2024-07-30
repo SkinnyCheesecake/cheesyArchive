@@ -50,8 +50,16 @@
     }
 
     img{
-        max-width: 90rem;
-        max-height: 80rem;
+        max-width: 80vw;
+        min-height: 40rem;
+        object-fit: cover;
+        width: 100%;
+        
+
+        @include desktop{
+            max-width: 90rem;
+            max-height: 80rem;
+        }
     }
 }
 

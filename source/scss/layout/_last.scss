@@ -14,8 +14,13 @@
     display: grid;
     position: relative;
     height: 80rem;
-    width: 80vw;
+    width: 390px;
     place-content: center;
+
+    @include desktop{
+        width: 80vw;
+    }
+
     .btn-group{
         margin-top: 2rem;
         width: 100%;
