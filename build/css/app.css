@@ -457,19 +457,21 @@ template {
   color: #fff;
   position: absolute;
   z-index: 1;
-  width: 600rem;
+  max-width: 80rem;
   text-align: center;
 }
 .header-section .overlay h1 {
   font-size: 15rem;
+  line-height: 0.82;
 }
 .header-section .overlay p {
+  margin-top: 20rem;
   font-size: 5rem;
 }
 .header-section .overlay h1, .header-section .overlay p {
   margin: 0;
   padding: 0;
-  letter-spacing: -4px;
+  letter-spacing: -2px;
 }
 .firstSection {
   min-height: 42rem;

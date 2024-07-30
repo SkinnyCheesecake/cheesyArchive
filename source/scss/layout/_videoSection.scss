@@ -14,20 +14,22 @@
         color: #fff;
         position: absolute;
         z-index: 1;
-        width: 600rem;
+        max-width: 80rem;
         text-align: center;
         h1{
             font-size: 15rem;
+            line-height: 0.82;
         }
 
         p{
+            margin-top: 20rem;
             font-size: 5rem;
         }
 
         h1, p{
             margin: 0;
             padding: 0;
-            letter-spacing: -4px;
+            letter-spacing: -2px;
         }
     }
 
