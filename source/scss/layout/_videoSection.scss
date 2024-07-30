@@ -14,8 +14,12 @@
         color: #fff;
         position: absolute;
         z-index: 1;
-        max-width: 80rem;
+        max-width: 100%;
         text-align: center;
+        display: grid;
+        place-content: center;
+        background: linear-gradient(270deg, rgba(black, 69%), rgba(darken(black, 20%), 90%));
+        inset: 0;
         h1{
             font-size: 15rem;
             line-height: 0.82;
@@ -34,8 +38,14 @@
     }
 
     //I WILL DELETE THIS LATER, THIS IS JUST FOR FILLING THE EMPTY SPACE    
-    .video-section{
-        
+    video{
+        display: block;
+        width: auto;
+        height: auto;
+
+        @include desktop{
+            width: 100%;
+        }
     }
 
 }
